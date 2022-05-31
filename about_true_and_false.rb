@@ -2,11 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutTrueAndFalse < Neo::Koan
   def truth_value(condition)
-    if condition
-      return true
-    else
-      return false
-    end
+    return condition ? true : false
   end
 
   def test_true_is_treated_as_true
